@@ -1,0 +1,18 @@
+@font-face {
+   font-family: 'Abaddon Light';
+   src: url(../font/abaddon_light.ttf) format(truetype);
+   font-weight: normal;
+   font-style: normal;
+}
+
+@font-face {
+   font-family: 'Abaddon Bold';
+   src: url(../font/abaddon_bold.ttf) format(truetype);
+   font-weight: bold;
+   font-style: normal;
+}
+
+* {
+   font-family: 'Abaddon Light', sans-serif;
+   font-weight: normal;
+}
