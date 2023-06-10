@@ -1,3 +1,10 @@
+/* variables go here */
+:root {
+   --green-color: rgba(6, 126, 6, 1.0);
+   --black-color: rgba(26, 26, 26, 1.0);
+   --gray-color: rgba(126, 126, 126, 1.0);
+}
+
 @font-face {
    font-family: 'Abaddon Light';
    src: url(../font/abaddon_light.ttf) format(truetype);
@@ -12,9 +19,45 @@
    font-display: swap;
 }
 
+@keyframes blink {
+   0% {
+      opacity: 1;
+   } 50% {
+      opacity: 0;
+   } 100% {
+      opacity: 1;
+   }
+}
+
 * {
-   font-family: 'Abaddon Light', sans-serif;
-   font-weight: normal;
-   color: rgba(242,242,242,0.98);
-   background-color: rgba(26,26,26,1.0);
+   background-color: var(--black-color);
+}
+
+body {
+   display: none;
+}
+
+ul {
+   list-style: none;
+   text-align: center;
+   padding-inline-start: 2.1rem;
+   padding-inline-end: 2.1rem;
+}
+
+p {
+   text-align: center;
+   padding-inline-start: 2.1rem;
+   padding-inline-end: 2.1rem;
+}
+
+#card {
+   display: none;
+}
+
+#prompt {
+   animation: blink 0.62s infinite;
+}
+
+#score {
+   color: var(--green-color);
 }
