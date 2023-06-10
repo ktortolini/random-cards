@@ -66,13 +66,8 @@ window.addEventListener("load", function() {
          score += cardValue;
 
          // formatting the display of score here
-         if (score >= 100) {
-            document.getElementById("score").textContent = score;
-         } else if (score >= 10) {
-            document.getElementById("score").textContent = "0" + score.toString();
-         } else {
-            document.getElementById("score").textContent = "00" + score.toString();
-         }
+         let formattedScore = score.toString().padStart(3, "0");
+         document.getElementById("score").textContent = formattedScore;
 
          totalCards.splice(randomCard, 1);
          console.log(totalCards);
@@ -84,7 +79,7 @@ window.addEventListener("load", function() {
          if (drawCount % 3 === 0) {
             
             // timer for score clearing goes here
-            setTimeout (() => {
+            setTimeout ( function() {
 
                let clearScore = zeroScore.toString().padStart(3, "0");
 
@@ -101,7 +96,8 @@ window.addEventListener("load", function() {
             if (score > highscore) {
 
                highscore = score;
-               document.getElementById("highscore").textContent = " " + score;
+               let formattedHighscore = highscore.toString().padStart(3, "0");
+               document.getElementById("highscore").textContent = " " + formattedHighscore;
 
             }
 
