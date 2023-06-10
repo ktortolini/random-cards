@@ -177,7 +177,7 @@ if (drawCount % 3 === 0) {
 }
 ```
 
-Well, that's the essence of what is happening when you play the game. There are plans to add more feature later on, but for now this is a game based solely on luck that isn't much fun. 🤷
+Well, that's the essence of what is happening when you play the game. There are plans to add more features later on, but for now this is a game based solely on luck that isn't much fun yet. 🤷
 
 But I had a lot of fun making it.
 ## _Credits_
