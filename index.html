@@ -30,13 +30,15 @@
 		<header>
 			<nav>
 				<ul>
-					<li class="highscore">High Score &colon;<span></span></li>
+					<li>High Score &colon;<span id="highscore"></span></li>
 				</ul>
 			</nav>
 		</header>
 		<main>
+			<section class="card-container">
+				<img id="card" alt="card image here" width="85" height="121" />
+			</section>
 			<section>
-				<img id="card"></img>
 				<p id="prompt">&gt; Press Enter or Tap Screen</p>
 			</section>
 			<!-- todo: update the src of javascript file -->
@@ -44,7 +46,10 @@
 		</main>
 		<footer>
 			<section>
-				<p>Score &colon; <span id="score">000</span></p>
+				<p>
+					Score &colon; <span id="score">000</span
+					><span id="input-name"></span>
+				</p>
 			</section>
 		</footer>
 	</body>

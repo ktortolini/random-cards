@@ -8,12 +8,13 @@ var totalCards = [
 // variable for the number of draws goes here
 var drawCount = 0;
 
-// variable for the score goes here
+// variables for the score go here
+const zeroScore = 0;
 var score = 0;
+var highscore = 0;
 
 // variable for the card image goes here
 var cardPicture = document.getElementById("card");
-cardPicture.src = `../cards/default.png`;
 
 // important: if it has to load it has to go here
 window.addEventListener("load", function() {
@@ -27,10 +28,13 @@ window.addEventListener("load", function() {
    this.document.body.style.marginBlockEnd = '2.1rem';
    this.document.body.style.paddingInlineStart = '0.76rem';
    this.document.body.style.paddingInlineEnd = '0.76rem';
-
+   
+   // card default image applied here
+   cardPicture.src = "/assets/cards/default.png";
+   
    // card function goes here
    this.document.addEventListener("keydown", drawRandomCard);
-   this.document.addEventListener("click", drawRandomCard); 
+   this.document.addEventListener("click", drawRandomCard);
    
    function drawRandomCard(event) {
 
@@ -41,6 +45,9 @@ window.addEventListener("load", function() {
          let cardValue = totalCards[randomCard][1];
          console.log("Card that you have drawn:", cardName);
          console.log("Value of the drawn card:", cardValue);
+
+         // code to change card image here
+         cardPicture.src = "/assets/cards/" + cardName + ".png";
 
          // display and formatting process for score goes here
          score += cardValue;
@@ -56,10 +63,24 @@ window.addEventListener("load", function() {
          console.log(totalCards);
 
          drawCount++;
-         if (drawCount === 3) {
+         if (drawCount % 3 === 0) {
+
+            let clearScore = zeroScore.toString().padStart(3, "0");
 
             console.log("Your limit has been reached.");
             console.log("Your final score:", score);
+
+            document.getElementById("score").textContent = clearScore;
+
+            if (score > highscore) {
+
+               highscore = score;
+               document.getElementById("highscore").textContent = " " + score;
+
+            }
+
+            // reset score here
+            score = zeroScore;
 
          }
 

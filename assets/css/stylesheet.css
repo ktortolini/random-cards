@@ -21,11 +21,11 @@
 
 @keyframes blink {
    0% {
-      opacity: 1;
+      /* keep this empty */
    } 50% {
-      opacity: 0;
+      color: var(--black-color);
    } 100% {
-      opacity: 1;
+      /* keep this empty */
    }
 }
 
@@ -35,6 +35,7 @@
 
 body {
    display: none;
+   font-size: 30px;
 }
 
 ul {
@@ -50,14 +51,26 @@ p {
    padding-inline-end: 2.1rem;
 }
 
+.card-container {
+   display: flex;
+   text-align: center;
+   justify-content: center;
+}
+
+
 #card {
-   display: none;
+   display: block;
 }
 
 #prompt {
    animation: blink 0.62s infinite;
+   animation-fill-mode: forwards;
 }
 
 #score {
    color: var(--green-color);
+}
+
+#highscore {
+   color: var(--gray-color);
 }
