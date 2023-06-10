@@ -1,4 +1,10 @@
 // card names and values go here
+const fixedCards = [
+   ["aceOfHearts", 1], ["aceOfDiamonds", 1], ["aceOfClubs", 1], ["aceOfSpades", 1], ["twoOfHearts", 2], ["twoOfDiamonds", 2], ["twoOfClubs", 2],["twoOfSpades", 2], ["threeOfHearts", 3], ["threeOfDiamonds", 3], ["threeOfClubs", 3], ["threeOfSpades", 3], ["fourOfHearts", 4],["fourOfDiamonds", 4], ["fourOfClubs", 4], ["fourOfSpades", 4], 
+   ["fiveOfHearts", 5], ["fiveOfDiamonds", 5], ["fiveOfClubs", 5], ["fiveOfSpades", 5], ["sixOfHearts", 6], ["sixOfDiamonds", 6], ["sixOfClubs", 6], ["sixOfSpades", 6], ["sevenOfHearts", 7], ["sevenOfDiamonds", 7], ["sevenOfClubs", 7], ["sevenOfSpades", 7], 
+   ["eightOfHearts", 8], ["eightOfDiamonds", 8], ["eightOfClubs", 8], ["eightOfSpades", 8], ["nineOfHearts", 9], ["nineOfDiamonds", 9], ["nineOfClubs", 9], ["nineOfSpades", 9], ["tenOfHearts", 10], ["tenOfDiamonds", 10], ["tenOfClubs", 10], ["tenOfSpades", 10], ["jackOfHearts", 11], ["jackOfDiamonds", 11], ["jackOfClubs", 11], ["jackOfSpades", 11], ["queenOfHearts", 12], ["queenOfDiamonds", 12], ["queenOfClubs", 12], ["queenOfSpades", 12], ["kingOfHearts", 13], ["kingOfDiamonds", 13], ["kingOfClubs", 13], ["kingOfSpades", 13]
+]
+
 var totalCards = [
    ["aceOfHearts", 1], ["aceOfDiamonds", 1], ["aceOfClubs", 1], ["aceOfSpades", 1], ["twoOfHearts", 2], ["twoOfDiamonds", 2], ["twoOfClubs", 2],["twoOfSpades", 2], ["threeOfHearts", 3], ["threeOfDiamonds", 3], ["threeOfClubs", 3], ["threeOfSpades", 3], ["fourOfHearts", 4],["fourOfDiamonds", 4], ["fourOfClubs", 4], ["fourOfSpades", 4], 
    ["fiveOfHearts", 5], ["fiveOfDiamonds", 5], ["fiveOfClubs", 5], ["fiveOfSpades", 5], ["sixOfHearts", 6], ["sixOfDiamonds", 6], ["sixOfClubs", 6], ["sixOfSpades", 6], ["sevenOfHearts", 7], ["sevenOfDiamonds", 7], ["sevenOfClubs", 7], ["sevenOfSpades", 7], 
@@ -29,15 +35,18 @@ window.addEventListener("load", function() {
    this.document.body.style.paddingInlineStart = '0.76rem';
    this.document.body.style.paddingInlineEnd = '0.76rem';
    
-   // card function goes here
+   // event listeners go here
    this.document.addEventListener("keydown", drawRandomCard);
    this.document.addEventListener("click", drawRandomCard);
    
+   // card function goes here
    function drawRandomCard(event) {
 
       if (event.code === "Enter" || event.type === "click") {
 
+         // expression for the randomization is here
          let randomCard = Math.floor(Math.random() * totalCards.length);
+
          let cardName = totalCards[randomCard][0];
          let cardValue = totalCards[randomCard][1];
          console.log("Card that you have drawn:", cardName);
@@ -52,9 +61,11 @@ window.addEventListener("load", function() {
             cardValue *= 2;
 
          }
-         // display and formatting process for score goes here
+
+         // add the value of card to score here
          score += cardValue;
 
+         // formatting the display of score here
          if (score >= 100) {
             document.getElementById("score").textContent = score;
          } else if (score >= 10) {
@@ -66,26 +77,37 @@ window.addEventListener("load", function() {
          totalCards.splice(randomCard, 1);
          console.log(totalCards);
 
+         // increase the draw count here
          drawCount++;
+
+         // checking for three draws here
          if (drawCount % 3 === 0) {
             
             // timer for score clearing goes here
             setTimeout (() => {
 
-            let clearScore = zeroScore.toString().padStart(3, "0");
+               let clearScore = zeroScore.toString().padStart(3, "0");
 
-            console.log("Your limit has been reached.");
-            console.log("Your final score:", score);
+               console.log("Your limit has been reached.");
+               console.log("Your final score:", score);
 
-            document.getElementById("score").textContent = clearScore;
+               document.getElementById("score").textContent = clearScore;
 
-         }, 1000);
+            }, 
+            
+            1000);
 
+            // statement for high score assignment goes here
             if (score > highscore) {
 
                highscore = score;
                document.getElementById("highscore").textContent = " " + score;
 
+            }
+
+            // statement for resetting the deck goes here
+            if (totalCards.length <= 1) {
+               totalCards = fixedCards.slice();
             }
 
             // reset score here

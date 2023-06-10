@@ -9,7 +9,7 @@
 		<title>Random Cards</title>
 		<meta name="description" content="" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+		<meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
 		<link rel="reset" href="./assets/css/reset.css" />
 		<link rel="stylesheet" href="./assets/css/stylesheet.css" />
 
@@ -30,26 +30,35 @@
 	<body>
 		<header>
 			<nav>
+				<!-- high score is also affected by ul selector in css -->
 				<ul>
 					<li>High Score &colon;<span id="highscore"></span></li>
 				</ul>
 			</nav>
 		</header>
 		<main>
+			<!-- centering happens in css with class selector -->
 			<section class="card-container">
-				<img id="card" alt="card image here" src="./assets/cards/default.png" width="85" height="121" />
+				<img
+					id="card"
+					alt="card image here"
+					src="./assets/cards/default.png"
+					width="85"
+					height="121"
+				/>
 			</section>
 			<section>
 				<p id="prompt">&gt; Press Enter or Tap Screen</p>
 			</section>
-			<!-- todo: update the src of javascript file -->
+			<!-- done: updated the src of javascript file -->
 			<script src="./assets/javascript/main.js" async defer></script>
 		</main>
 		<footer>
 			<section>
 				<p>
-					Score &colon; <span id="score">000</span
-					><span id="input-name"></span>
+					Score &colon; <span id="score">000</span>
+					<!-- todo: add highscore name functionality -->
+					<span id="input-name"></span>
 				</p>
 			</section>
 		</footer>
