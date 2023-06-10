@@ -11,12 +11,12 @@
 
 ## _Description_
 
-This repository has a random card game made using Javascript, as well as a valid HTML5 index file with Accessibility Attributes, and a valid CSS3 style sheet with a reset file for compatibility. The purpose of this repository is to show a high degree of creativity, and a general enthusiasm for making silly games on my free time, using such coding techniques as:
+This repository has a random card game made using Javascript, as well as a valid HTML5 index file with Accessibility Attributes, and a valid CSS3 style sheet with a reset file for compatibility. The purpose of this repository is to show a degree of creativity, and a general enthusiasm for making silly games in my free time, using such coding techniques as:
 
 - Dynamic image sourcing to load a corresponding visual representation in the center of the screen, in order to show the card that has been drawn by the user.
 - Dynamic styling applied with a `load` event in order to improve the visual appearance of the loading sequence.
 - Conditional statements that handle user input, apply special game rules, apply the scores to the high-scores, and refill the deck of cards once all of the cards have been drawn.
-- Various statements like `if()` statements, console logging using `console.log()` statements, 
+- Various statements like `if()` statements, console logging using `console.log()` statements, and creating functions with `function()` statements. 
 - Comparison operators ( `<=`, `>=`, and `===` ), logical operators ( `&&` and `||`), and arithmetic operators ( `%`, `++` and `--` ).
 - Multidimensional arrays to store the name and value of each card contained in a full deck of cards and reset the playing deck with a `const` two-dimensional array when all the cards have been drawn.
 
