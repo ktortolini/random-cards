@@ -26,7 +26,7 @@ The top of the screen will show your high-score and is achieved with the followi
 
 ```html
 <nav>
-	<!-- the high-score is also affected by a 'ul' selector in the css file that centers everything -->
+	<!-- the high-score is affected by a 'ul' selector in the css file that centers everything -->
 	<ul>
 		<li>High Score &colon;<span id="highscore"></span></li>
 	</ul>
