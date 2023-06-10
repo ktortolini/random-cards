@@ -47,7 +47,7 @@ window.addEventListener("load", function() {
          console.log("Value of the drawn card:", cardValue);
 
          // code to change card image here
-         cardPicture.src = "/assets/cards/" + cardName + ".png";
+         cardPicture.src = "./assets/cards/" + cardName + ".png";
 
          // display and formatting process for score goes here
          score += cardValue;
