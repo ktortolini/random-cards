@@ -29,9 +29,6 @@ window.addEventListener("load", function() {
    this.document.body.style.paddingInlineStart = '0.76rem';
    this.document.body.style.paddingInlineEnd = '0.76rem';
    
-   // card default image applied here
-   cardPicture.src = "./assets/cards/default.png";
-   
    // card function goes here
    this.document.addEventListener("keydown", drawRandomCard);
    this.document.addEventListener("click", drawRandomCard);
