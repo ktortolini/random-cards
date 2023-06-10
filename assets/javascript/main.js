@@ -46,8 +46,15 @@ window.addEventListener("load", function() {
          // code to change card image here
          cardPicture.src = "./assets/cards/" + cardName + ".png";
 
+         // double points rule goes here
+         if (cardName.includes("Hearts")) {
+
+            cardValue *= 2;
+
+         }
          // display and formatting process for score goes here
          score += cardValue;
+
          if (score >= 100) {
             document.getElementById("score").textContent = score;
          } else if (score >= 10) {
@@ -61,6 +68,9 @@ window.addEventListener("load", function() {
 
          drawCount++;
          if (drawCount % 3 === 0) {
+            
+            // timer for score clearing goes here
+            setTimeout (() => {
 
             let clearScore = zeroScore.toString().padStart(3, "0");
 
@@ -68,6 +78,8 @@ window.addEventListener("load", function() {
             console.log("Your final score:", score);
 
             document.getElementById("score").textContent = clearScore;
+
+         }, 1000);
 
             if (score > highscore) {
 
