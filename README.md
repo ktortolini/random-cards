@@ -188,6 +188,8 @@ Tremendous thank you to [Androx](https://twitter.com/Paradox1821) for the asset 
 
 Incredible thank you to [Caffi_Nate](https://twitter.com/caffi_nate) for the font used throughout this mini project with the link provided below: https://caffinate.itch.io/abaddon.
 
-There were a few helpful tutorials that guided me through this project. First, the multidimensional arrays tutorial by [JavaScriptTutorial](https://www.javascripttutorial.net/) was a great resource - link: https://www.javascripttutorial.net/javascript-multidimensional-array/. 
+There were a few helpful tutorials that guided me through this project. First, the multidimensional arrays tutorial by [JavaScriptTutorial](https://www.javascripttutorial.net/) was a great resource - link: https://www.javascripttutorial.net/javascript-multidimensional-array/.
+
+Next, a few resources from [W3Schools](https://www.w3schools.com/) were very helpful, including their resource about favicons (https://www.w3schools.com/html/html_favicon.asp), there resource about `getElementById()` (https://www.w3schools.com/jsref/met_document_getelementbyid.asp), and their resource about `document.body` (https://www.w3schools.com/jsref/prop_doc_body.asp).
 
 Lastly, the Javascript performance tutorial by [TapasAdhikary](https://www.tapasadhikary.com/) was another great resource - link here: https://www.freecodecamp.org/news/javascript-performance-async-defer/.
