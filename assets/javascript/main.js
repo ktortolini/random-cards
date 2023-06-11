@@ -26,18 +26,18 @@ var cardPicture = document.getElementById("card");
 window.addEventListener("load", function() {
 
    // body styles go here
-   this.document.body.style.display = 'block';
-   this.document.body.style.fontFamily = "'Abaddon Light'";
-   this.document.body.style.fontWeight = "normal";
-   this.document.body.style.color = "rgba(242, 242, 242, 0.98)";
-   this.document.body.style.marginBlockStart = '2.1rem';
-   this.document.body.style.marginBlockEnd = '2.1rem';
-   this.document.body.style.paddingInlineStart = '0.76rem';
-   this.document.body.style.paddingInlineEnd = '0.76rem';
+   document.body.style.display = 'block';
+   document.body.style.fontFamily = "'Abaddon Light'";
+   document.body.style.fontWeight = "normal";
+   document.body.style.color = "rgba(242, 242, 242, 0.98)";
+   document.body.style.marginBlockStart = '2.1rem';
+   document.body.style.marginBlockEnd = '2.1rem';
+   document.body.style.paddingInlineStart = '0.76rem';
+   document.body.style.paddingInlineEnd = '0.76rem';
    
    // event listeners go here
-   this.document.addEventListener("keydown", drawRandomCard);
-   this.document.addEventListener("click", drawRandomCard);
+   document.addEventListener("keydown", drawRandomCard);
+   document.addEventListener("click", drawRandomCard);
    
    // card function goes here
    function drawRandomCard(event) {
