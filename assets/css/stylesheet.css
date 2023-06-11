@@ -1,0 +1,76 @@
+/* variables go here */
+:root {
+   --green-color: rgba(6, 126, 6, 1.0);
+   --black-color: rgba(26, 26, 26, 1.0);
+   --gray-color: rgba(126, 126, 126, 1.0);
+}
+
+@font-face {
+   font-family: 'Abaddon Light';
+   src: url(../font/abaddon_light.ttf) format(truetype);
+   font-weight: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Abaddon Bold';
+   src: url(../font/abaddon_bold.ttf) format(truetype);
+   font-weight: bold;
+   font-display: swap;
+}
+
+@keyframes blink {
+   0% {
+      /* keep this empty */
+   } 50% {
+      color: var(--black-color);
+   } 100% {
+      /* keep this empty */
+   }
+}
+
+* {
+   background-color: var(--black-color);
+}
+
+body {
+   display: none;
+   font-size: 30px;
+}
+
+ul {
+   list-style: none;
+   text-align: center;
+   padding-inline-start: 2.1rem;
+   padding-inline-end: 2.1rem;
+}
+
+p {
+   text-align: center;
+   padding-inline-start: 2.1rem;
+   padding-inline-end: 2.1rem;
+}
+
+.card-container {
+   display: flex;
+   text-align: center;
+   justify-content: center;
+}
+
+
+#card {
+   display: block;
+}
+
+#prompt {
+   animation: blink 0.62s infinite;
+   animation-fill-mode: forwards;
+}
+
+#score {
+   color: var(--green-color);
+}
+
+#highscore {
+   color: var(--gray-color);
+}

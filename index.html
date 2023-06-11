@@ -29,6 +29,38 @@
 		<!-- done: updated the src of javascript file -->
 		<script defer src="./assets/javascript/main.js"></script>
 	</head>
-
-	<body></body>
+	<body>
+		<header>
+			<nav>
+				<!-- the high-score is also affected by a 'ul' selector in the css file -->
+				<ul>
+					<li>High Score &colon;<span id="highscore"></span></li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<!-- centering happens in css with class selector -->
+			<section class="card-container">
+				<img
+					id="card"
+					alt="card image here"
+					src="./assets/cards/default.png"
+					width="85"
+					height="121"
+				/>
+			</section>
+			<section>
+				<p id="prompt">&gt; Press Enter or Tap Screen</p>
+			</section>
+		</main>
+		<footer>
+			<section>
+				<p>
+					Score &colon; <span id="score">000</span>
+					<!-- todo: add highscore name functionality -->
+					<span id="input-name"></span>
+				</p>
+			</section>
+		</footer>
+	</body>
 </html>
