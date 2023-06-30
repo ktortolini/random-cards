@@ -25,7 +25,7 @@ This repository has a random card game made using Javascript, as well as a valid
 The top of the screen will show your high-score and is achieved with the following `HTML` code:
 
 ```html
-<nav>
+<nav class="nb-row shown">
 	<!-- the high-score is affected by a 'ul' selector in the css file that centers everything -->
 	<ul>
 		<li>High Score &colon;<span id="highscore"></span></li>
@@ -55,7 +55,7 @@ Underneath the high-score, the most recently drawn card will be shown, and this 
 
 ```html
 <!-- the games starts with a picture of a face-down card centered with the css file -->
-<section class="card-container">
+<section class="grphc-container shown">
 	<img
 		id="card"
 		alt="card image here"
@@ -97,7 +97,7 @@ function drawRandomCard(event) {
 Underneath the picture of the card is a blinking request for the player to hit the enter button on their keyboard or tap the screen on their mobile device. This effect is achieved with the following `CSS` code:
 
 ```css
-@keyframes blink {
+@keyframes blinkAnimation {
 
    0% {
 
@@ -117,10 +117,10 @@ Underneath the picture of the card is a blinking request for the player to hit t
 }
 
 /* then the animation created above is applied to the id selector */
-#prompt {
+.p-row {
 
    /* the animation is played over and over */
-   animation: blink 0.62s infinite;
+   animation: blinkAnimation 0.62s infinite;
 
 }
 ```
@@ -180,13 +180,15 @@ if (drawCount % 3 === 0) {
 Well, that's the essence of what is happening when you play the game. There are plans to add more features later on, but for now this is a game based solely on luck that isn't much fun yet. 🤷
 
 But I had a lot of fun making it.
+
+## _BitKit_
+
+A new `bitkit.css` file has been developed to handle the formatting and presentation of this game. This file will gradually develop into a framework that will be used in future projects. Documentation for the `bitkit.css` framework (in development) will first be provided here.
 ## _Credits_
 
 The ITCH, JS, and GITHUB PAGES readme file icons on the top were made by [Ileriayo](https://github.com/Ileriayo) with a link provided below: https://github.com/Ileriayo/markdown-badges#badges. 
 
 Tremendous thank you to [Androx](https://twitter.com/Paradox1821) for the asset pack used to create this mini project with the link provided below: https://byandrox.itch.io/pixel-art-poker-deck.
-
-Incredible thank you to [Caffi_Nate](https://twitter.com/caffi_nate) for the font used throughout this mini project with the link provided below: https://caffinate.itch.io/abaddon.
 
 There were a few helpful tutorials that guided me through this project. First, the multidimensional arrays tutorial by [JavaScriptTutorial](https://www.javascripttutorial.net/) was a great resource - link: https://www.javascripttutorial.net/javascript-multidimensional-array/.
 
