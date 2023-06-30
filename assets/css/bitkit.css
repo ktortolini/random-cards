@@ -1,0 +1,242 @@
+/* imports the type kit css for the custom font */
+@import url("https://use.typekit.net/taj5cvm.css");
+/* styling for small mobile devices and medium mobile devices */
+@media screen 
+and (min-width: 319px)
+and (max-width: 424px) {
+	body {
+		font-size: 3ch;
+		max-width: 84vw;
+	}
+}
+/* styling for large mobile devices and small tablets */
+@media screen
+and (min-width: 425px)
+and (max-width: 578px) {
+	body {
+		font-size: 4ch;
+		max-width: 82vw;
+	}
+}
+/* styling for large tablet devices and small laptops */
+@media screen
+and (min-width: 579px)
+and (max-width: 1026px) {
+	body {
+		font-size: 5ch;
+		max-width: 79vw;
+	}
+}
+/* styling for desktop computers */
+@media screen
+and (min-width: 1027px) {
+	body {
+		font-size: 8ch;
+		max-width: 68vw;
+	}
+}
+/* the blink animation */
+@keyframes blinkAnimation {
+   0% {
+      /* keep this empty */
+   } 50% {
+      color: var(--black-color);
+   } 100% {
+      /* keep this empty */
+   }
+}
+/* the warning animation */
+@keyframes warningAnimation {
+	0% {
+		/* leave this empty */
+	} 
+	100% {
+		color: var(--warning-text-color);
+      background-color: var(--warning-color);
+      border-color: var(--warning-border-color);
+	}
+}
+/* the success animation */
+@keyframes successAnimation {
+	0% {
+		/* leave this empty */
+	}
+	100% {
+		color: var(--success-text-color);
+		background-color: var(--success-color);
+      border-color: var(--success-border-color);
+	}
+}
+:root {
+	/* warning background and text colors */
+	--warning-color: hsla(347, 100%, 52%, 0.4);
+   --warning-text-color: hsla(347, 100%, 29%, 0.8);
+   --warning-border-color: hsla(347, 100%, 41%, 1.0);
+   /* warning background and text colors */
+	--success-color: hsla(87, 100%, 52%, 0.4);
+   --success-text-color: hsla(87, 100%, 29%, 0.8);
+   --success-border-color: hsla(87, 100%, 41%, 1.0);
+	/* white background and text colors */
+	--white-color: hsl(0, 17%, 89%, 0.4);
+   --white-text-color: hsl(0, 17%, 91%, 0.8);
+   --white-border-color: hsl(0, 17%, 93%, 1.0);
+   /* black background and text colors */
+   --black-color: hsl(190, 33%, 17%, 0.4);
+   --black-text-color: hsl(190, 33%, 19%, 0.8);
+   --black-border-color: hsl(190, 33%, 21%, 1.0);
+   /* default background and text colors */
+	--default-color: hsl(215, 25%, 75%, 0.4);
+   --default-text-color: hsla(215, 25%, 59%, 0.8);
+   --default-border-color: hsla(215, 25%, 63%, 1.0);
+}
+/* base attributes */
+html {
+   box-sizing: border-box;
+   cursor: url(https://res.cloudinary.com/bitkit/ui/c.png), auto;
+   text-shadow: 0.01rem 0.01rem var(--black-color);
+}
+/* old-school effect */
+html::before {
+   inset: 0;
+	content: '';
+	position: absolute;
+   pointer-events: none;
+	background: linear-gradient(
+		hsla(0, 0%, 0%, 0.0) 50%,
+      hsla(0, 0%, 100%, 0.03) 50%
+	);
+	background-size: 85% 0.825px, 0.825px 85%;
+}
+/* base attributes for body */
+body {
+	/* sets the font */
+	font-weight: 400;
+   /* sets overflow */
+   overflow: hidden;
+	overflow-wrap: break-word;
+   /* sets the font color */
+	color: var(--default-text-color);
+   /* sets a transition to body */
+   transition: all 0.285s linear;
+   /* sets the font family to lores */
+   font-family: 'lores-12', sans-serif;
+   /* sets the body background color */
+	background-color: var(--black-color);
+}
+/* ul attributes */
+ul {
+   list-style: none;
+   text-align: center;
+   padding-inline-start: 2.1rem;
+   padding-inline-end: 2.1rem;
+}
+/* p attributes */
+p {
+   text-align: center;
+   padding-inline-start: 2.1rem;
+   padding-inline-end: 2.1rem;
+}
+/* hidden and shown classes */
+.hidden {
+	display: none !important;
+}
+.shown {
+	display: flex !important;
+}
+/* body class */
+.bdy-container {
+   /* sets height */
+   min-height: 100vh;
+   max-height: 100vh;
+}
+.grphc-container {
+   /* sets flex */
+	display: flex;
+   /* centers */
+   text-align: center;
+   justify-content: center;
+}
+/* prompt class */
+.p-row {
+   /* sets the font */
+   font-weight: 400;
+   /* sets the animation for prompts */
+   animation: blinkAnimation 0.62s infinite;
+   animation-fill-mode: forwards;
+}
+/* navbar class */
+.nb-row {
+   display: block !important;
+}
+/* button classes */
+.btn-row {
+	/* sets the font */
+	font-weight: 600;
+	/* aligns to center */
+	justify-content: center;
+	/* aligns to center */
+	text-align: center;
+	/* sets the border */
+	align-items: center;
+   align-content: center;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	border-radius: 0.15rem;
+	/* sets the width */
+	max-width: 9.8ch;
+   /* sets the height */
+   min-height: 2.7ch;
+	/* sets the background color & shadow */
+	background-color: var(--default-color);
+   /* sets the border style and color */
+   border: 0.5rem outset var(--default-border-color);
+}
+.btn-row:active {
+   color: var(--black-text-color);
+   /* sets the background color & shadow */
+	background-color: var(--black-color);
+}
+/* information class */
+.i-row {
+	/* sets flex */
+	display: flex !important;
+	/* sets the font */
+	font-weight: 600;
+	/* aligns to center */
+	justify-content: center;
+	/* aligns to center */
+	text-align: center;
+	/* sets the border */
+	align-items: center;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	border-radius: 0.15rem;
+	/* sets the height */
+	min-height: 19vh;
+	/* sets the background color & shadow */
+	background-color: var(--default-color);
+   /* sets the border style and color */
+   border: 0.5rem outset var(--default-border-color);
+}
+/* choice class */
+.c-row {
+	/* sets flex */
+	display: flex;
+	/* sets font color */
+	color: var(--default-text-color);
+	/* aligns to center */
+	justify-content: center;
+	/* sets top margin */
+	margin-top: 1rem;
+	/* sets height */
+	min-height: 10.5vh;
+	/* sets the border */
+	align-items: center;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	border-radius: 0.15rem;
+	/* sets the background color & shadow */
+	background-color: var(--default-color);
+   /* sets the border style and color */
+   border: 0.5rem outset var(--default-border-color);
+}

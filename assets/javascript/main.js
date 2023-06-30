@@ -24,16 +24,6 @@ var cardPicture = document.getElementById("card");
 
 // important: if it has to load it has to go here
 window.addEventListener("load", function() {
-
-   // body styles go here
-   document.body.style.display = 'block';
-   document.body.style.fontFamily = "'Abaddon Light'";
-   document.body.style.fontWeight = "normal";
-   document.body.style.color = "rgba(242, 242, 242, 0.98)";
-   document.body.style.marginBlockStart = '2.1rem';
-   document.body.style.marginBlockEnd = '2.1rem';
-   document.body.style.paddingInlineStart = '0.76rem';
-   document.body.style.paddingInlineEnd = '0.76rem';
    
    // event listeners go here
    document.addEventListener("keydown", drawRandomCard);
