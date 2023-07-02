@@ -198,8 +198,6 @@ p {
 }
 /* information class */
 .i-row {
-	/* sets flex */
-	display: flex;
 	/* sets the font */
 	font-weight: 600;
 	/* aligns to center */
@@ -220,8 +218,6 @@ p {
 }
 /* choice class */
 .c-row {
-	/* sets flex */
-	display: flex;
 	/* sets font color */
 	color: var(--default-text-color);
 	/* aligns to center */
