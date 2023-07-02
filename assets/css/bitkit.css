@@ -199,7 +199,7 @@ p {
 /* information class */
 .i-row {
 	/* sets flex */
-	display: flex !important;
+	display: flex;
 	/* sets the font */
 	font-weight: 600;
 	/* aligns to center */
