@@ -136,12 +136,21 @@ p {
    padding-inline-start: 2.1rem;
    padding-inline-end: 2.1rem;
 }
-/* hidden and shown classes */
+/* hidden and other classes */
 .hidden {
 	display: none !important;
 }
-.shown {
+.flex {
 	display: flex !important;
+}
+.block {
+	display: block !important;
+}
+.inline-flex {
+	display: inline-flex !important;
+}
+.inline-block {
+	display: inline-block !important;
 }
 /* body class */
 .bdy-container {
@@ -150,8 +159,6 @@ p {
    max-height: 100vh;
 }
 .grphc-container {
-   /* sets flex */
-	display: flex;
    /* centers */
    text-align: center;
    justify-content: center;
@@ -166,7 +173,8 @@ p {
 }
 /* navbar class */
 .nb-row {
-   display: block !important;
+   display: block;
+	/* todo: additional styling */
 }
 /* button classes */
 .btn-row {
