@@ -109,6 +109,8 @@ html::before {
 }
 /* base attributes for body */
 body {
+	/* sets the margin */
+	margin: 0 auto;
 	/* sets the font */
 	font-weight: 400;
    /* sets overflow */
@@ -127,14 +129,14 @@ body {
 ul {
    list-style: none;
    text-align: center;
-   padding-inline-start: 2.1rem;
    padding-inline-end: 2.1rem;
+	padding-inline-start: 2.1rem;
 }
 /* p attributes */
 p {
    text-align: center;
-   padding-inline-start: 2.1rem;
    padding-inline-end: 2.1rem;
+	padding-inline-start: 2.1rem;
 }
 /* hidden and other classes */
 .hidden {
@@ -154,39 +156,47 @@ p {
 }
 /* body class */
 .bdy-container {
+	/* sets margin */
+	margin: 0 auto;
    /* sets height */
    min-height: 100vh;
    max-height: 100vh;
 }
 .grphc-container {
+	/* sets margin */
+	margin: 0 auto;
    /* centers */
    text-align: center;
    justify-content: center;
 }
 /* prompt class */
 .p-row {
+	/* sets margin */
+	margin: 0 auto;
    /* sets the font */
    font-weight: 400;
    /* sets the animation for prompts */
+	animation-fill-mode: forwards;
    animation: blinkAnimation 0.62s infinite;
-   animation-fill-mode: forwards;
 }
 /* navbar class */
 .nb-row {
-   display: block;
+	/* sets margin */
+	margin: 0 auto;
 	/* todo: additional styling */
 }
 /* button classes */
 .btn-row {
+	/* sets margin */
+	margin: 0 auto;
 	/* sets the font */
 	font-weight: 600;
-	/* aligns to center */
-	justify-content: center;
-	/* aligns to center */
+	/* aligns center */
 	text-align: center;
-	/* sets the border */
 	align-items: center;
    align-content: center;
+	justify-content: center;
+	/* sets the border */
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 	border-radius: 0.15rem;
@@ -206,14 +216,16 @@ p {
 }
 /* information class */
 .i-row {
+	/* sets margin */
+	margin: 0 auto;
 	/* sets the font */
 	font-weight: 600;
-	/* aligns to center */
-	justify-content: center;
-	/* aligns to center */
+	/* aligns center */
 	text-align: center;
-	/* sets the border */
 	align-items: center;
+   align-content: center;
+	justify-content: center;
+	/* sets the border */
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 	border-radius: 0.15rem;
@@ -226,19 +238,23 @@ p {
 }
 /* choice class */
 .c-row {
-	/* sets font color */
-	color: var(--default-text-color);
-	/* aligns to center */
+	/* sets margin */
+	margin: 0 auto;
+	/* aligns center */
+	text-align: center;
+	align-items: center;
+   align-content: center;
 	justify-content: center;
 	/* sets top margin */
 	margin-top: 1rem;
 	/* sets height */
 	min-height: 10.5vh;
 	/* sets the border */
-	align-items: center;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 	border-radius: 0.15rem;
+	/* sets font color */
+	color: var(--default-text-color);
 	/* sets the background color & shadow */
 	background-color: var(--default-color);
    /* sets the border style and color */
