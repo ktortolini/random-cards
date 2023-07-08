@@ -35,6 +35,14 @@ and (min-width: 1027px) {
 		max-width: 68vw;
 	}
 }
+@keyframes scanAnimation {
+	0% {
+	  background-position: 0rem 0rem;
+	}
+	100% {
+	  background-position: 0rem -3.262rem;
+	}
+ }
 /* the blink animation */
 @keyframes blinkAnimation {
    0% {
@@ -102,6 +110,7 @@ and (min-width: 1027px) {
 /* base attributes */
 html {
    box-sizing: border-box;
+	scroll-behavior: smooth;
    cursor: var(--cursor), auto;
    text-shadow: 0.01rem 0.01rem var(--black-color);
 }
@@ -111,11 +120,14 @@ html::before {
 	content: '';
 	position: absolute;
    pointer-events: none;
+	mix-blend-mode: screen;
 	background: linear-gradient(
+		to bottom,
 		hsla(0, 0%, 0%, 0.0) 50%,
       hsla(0, 0%, 100%, 0.03) 50%
 	);
-	background-size: 85% 0.825px, 0.825px 85%;
+	background-size: 85% 0.805px, 0.805px 85%;
+	animation: scanAnimation 0.55s linear infinite;
 }
 /* base attributes for body */
 body {
@@ -176,11 +188,22 @@ p {
 .grphc-container {
 	/* sets margin */
 	margin: 0 auto;
+	/* stops select */
+	user-select: none;
    /* aligns center */
 	text-align: center;
 	align-items: center;
    align-content: center;
 	justify-content: center;
+}
+/* text class */
+.t-row {
+	/* sets margin */
+	margin: 0 auto;
+   /* sets the font */
+   font-weight: 400;
+	/* stops select */
+	user-select: none;
 }
 /* prompt class */
 .p-row {
@@ -188,6 +211,8 @@ p {
 	margin: 0 auto;
    /* sets the font */
    font-weight: 400;
+	/* stops select */
+	user-select: none;
    /* sets the animation for prompts */
 	animation-fill-mode: forwards;
    animation: blinkAnimation 0.62s infinite;
@@ -196,6 +221,8 @@ p {
 .nb-row {
 	/* sets margin */
 	margin: 0 auto;
+	/* stops select */
+	user-select: none;
 	/* todo: additional styling */
 }
 /* button classes */
@@ -204,6 +231,8 @@ p {
 	margin: 0 auto;
 	/* sets the font */
 	font-weight: 600;
+	/* stops select */
+	user-select: none;
 	/* aligns center */
 	text-align: center;
 	align-items: center;
@@ -233,6 +262,8 @@ p {
 	margin: 0 auto;
 	/* sets the font */
 	font-weight: 600;
+	/* stops select */
+	user-select: none;
 	/* aligns center */
 	text-align: center;
 	align-items: center;
@@ -253,13 +284,15 @@ p {
 .c-row {
 	/* sets margin */
 	margin: 0 auto;
+	/* top margin */
+	margin-top: 1rem;
+	/* stops select */
+	user-select: none;
 	/* aligns center */
 	text-align: center;
 	align-items: center;
    align-content: center;
 	justify-content: center;
-	/* sets top margin */
-	margin-top: 1rem;
 	/* sets height */
 	min-height: 10.5vh;
 	/* sets the border */
