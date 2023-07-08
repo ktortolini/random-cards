@@ -35,14 +35,6 @@ and (min-width: 1027px) {
 		max-width: 68vw;
 	}
 }
-@keyframes scanAnimation {
-	0% {
-	  background-position: 0rem 0rem;
-	}
-	100% {
-	  background-position: 0rem -3.262rem;
-	}
- }
 /* the blink animation */
 @keyframes blinkAnimation {
    0% {
@@ -53,6 +45,14 @@ and (min-width: 1027px) {
       /* keep this empty */
    }
 }
+@keyframes scanAnimation {
+	0% {
+	  /* keep this empty */
+	}
+	100% {
+	  background-position: 0rem -3.262rem;
+	}
+ }
 /* the warning animation */
 @keyframes warningAnimation {
 	0% {
