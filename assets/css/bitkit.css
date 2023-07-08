@@ -88,11 +88,21 @@ and (min-width: 1027px) {
 	--default-color: hsl(215, 25%, 75%, 0.4);
    --default-text-color: hsla(215, 25%, 59%, 0.8);
    --default-border-color: hsla(215, 25%, 63%, 1.0);
+
+	/* graphics asset urls from the cloudinary platform */
+	/* info: default cursor for bitkit ui in cloudinary */
+	--cursor: url(https://res.cloudinary.com/bitkit/ui/c.png);
+	/* info: weather icons for bitkit features from cloudinary */
+	--weather-ice: url(https://res.cloudinary.com/bitkit/w/wi.png);
+	--weather-sun: url(https://res.cloudinary.com/bitkit/w/ws.png);
+	--weather-rain: url(https://res.cloudinary.com/bitkit/w/wr.png);
+	--weather-cloud: url(https://res.cloudinary.com/bitkit/w/wc.png);
+	--weather-thunder: url(https://res.cloudinary.com/bitkit/w/wt.png);
 }
 /* base attributes */
 html {
    box-sizing: border-box;
-   cursor: url(https://res.cloudinary.com/bitkit/ui/c.png), auto;
+   cursor: var(--cursor), auto;
    text-shadow: 0.01rem 0.01rem var(--black-color);
 }
 /* old-school effect */
@@ -162,12 +172,15 @@ p {
    min-height: 100vh;
    max-height: 100vh;
 }
+/* graphic class */
 .grphc-container {
 	/* sets margin */
 	margin: 0 auto;
-   /* centers */
-   text-align: center;
-   justify-content: center;
+   /* aligns center */
+	text-align: center;
+	align-items: center;
+   align-content: center;
+	justify-content: center;
 }
 /* prompt class */
 .p-row {
