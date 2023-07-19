@@ -40,7 +40,7 @@ and (min-width: 1027px) {
    0% {
       /* keep this empty */
    } 50% {
-      color: var(--black-color);
+      color: transparent;
    } 100% {
       /* keep this empty */
    }
@@ -93,9 +93,9 @@ and (min-width: 1027px) {
    --black-text-color: hsl(190, 33%, 19%, 0.8);
    --black-border-color: hsl(190, 33%, 21%, 1.0);
    /* default background and text colors */
-	--default-color: hsl(215, 25%, 75%, 0.4);
-   --default-text-color: hsla(215, 25%, 59%, 0.8);
-   --default-border-color: hsla(215, 25%, 63%, 1.0);
+	--default-color: hsla(215, 32%, 58%, 0.3);
+   --default-text-color: hsla(0, 0%, 15%, 0.8);
+   --default-border-color: hsl(215, 32%, 10%, 1.0);
 
 	/* graphics asset urls from the cloudinary platform */
 	/* info: default cursor for bitkit ui in cloudinary */
