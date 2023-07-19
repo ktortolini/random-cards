@@ -100,12 +100,18 @@ and (min-width: 1027px) {
 	/* graphics asset urls from the cloudinary platform */
 	/* info: default cursor for bitkit ui in cloudinary */
 	--cursor: url(https://res.cloudinary.com/bitkit/ui/c.png);
+	--txt-caret: url(https://res.cloudinary.com/bitkit/ui/cl.png);
+	/* info: history icon for bitkit features from cloudinary */
+	--history-icon: url(https://res.cloudinary.com/bitkit/ui/h.png);
 	/* info: weather icons for bitkit features from cloudinary */
 	--weather-ice: url(https://res.cloudinary.com/bitkit/w/wi.png);
 	--weather-sun: url(https://res.cloudinary.com/bitkit/w/ws.png);
 	--weather-rain: url(https://res.cloudinary.com/bitkit/w/wr.png);
 	--weather-cloud: url(https://res.cloudinary.com/bitkit/w/wc.png);
 	--weather-thunder: url(https://res.cloudinary.com/bitkit/w/wt.png);
+}
+::-webkit-scrollbar {
+	height: 0;
 }
 /* base attributes */
 html {
@@ -147,12 +153,54 @@ body {
    /* sets the body background color */
 	background-color: var(--black-color);
 }
+/* button attributes */
+button {
+	font-size: 1.1ch;
+	font-family: inherit;
+	cursor: var(--cursor);
+	color: var(--black-color);
+}
+button:hover {
+	color: var(--black-text-color);
+	transition: linear 0.3s;
+}
+/* input attributes */
+.in-row input,
+.in-row input:not(:placeholder-shown) {
+	/* sets margin */
+	margin: 0 auto;
+	/* sets font size */
+   font-size: 1.1ch;
+	/* sets the font */
+	font-weight: 400;
+	/* sets the width */
+	min-width: 12.6rem;
+   /* sets the height */
+   min-height: 2rem;
+	/* sets the font */
+	font-family: inherit;
+   /* sets the border style and color */
+   border: 0.35rem inset var(--white-border-color);
+}
+.in-row input:hover {
+	cursor: var(--txt-caret), text;
+}
+.in-row input:focus {
+	/* sets an outline */
+	outline: 0.35rem solid transparent;
+}
 /* ul attributes */
 ul {
    list-style: none;
    text-align: center;
    padding-inline-end: 2.1rem;
 	padding-inline-start: 2.1rem;
+}
+/* a attributes */
+a {
+	cursor: inherit;
+	text-decoration: none;
+	color: var(--default-border-color);
 }
 /* p attributes */
 p {
@@ -195,6 +243,14 @@ p {
 	align-items: center;
    align-content: center;
 	justify-content: center;
+}
+/* carousel class */
+.car-container {
+	overflow-x: auto;
+	scroll-behavior: smooth;
+	scroll-snap-align: start;
+	overscroll-behavior: contain;
+	scroll-snap-type: x mandatory;
 }
 /* text class */
 .t-row {
@@ -256,6 +312,33 @@ p {
    /* sets the background color & shadow */
 	background-color: var(--black-color);
 }
+/* form class */
+.f-row {
+	/* sets margin */
+	margin: 0 auto;
+	/* sets the font */
+	font-weight: 600;
+	/* stops select */
+	user-select: none;
+   /* top padding */
+	padding-top: 1ch;
+	/* aligns center */
+	text-align: center;
+	align-items: center;
+   align-content: center;
+	justify-content: center;
+	/* sets the border */
+	padding-bottom: 2ch;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	border-radius: 0.15rem;
+	/* sets the height */
+	min-height: 18vh;
+	/* sets the background color & shadow */
+	background-color: var(--default-color);
+   /* sets the border style and color */
+   border: 0.5rem outset var(--default-border-color);
+}
 /* information class */
 .i-row {
 	/* sets margin */
@@ -275,6 +358,37 @@ p {
 	border-radius: 0.15rem;
 	/* sets the height */
 	min-height: 19vh;
+	/* sets the background color & shadow */
+	background-color: var(--default-color);
+   /* sets the border style and color */
+   border: 0.5rem outset var(--default-border-color);
+}
+/* information column */
+.i-col {
+	/* sets margin */
+	margin: 0 auto;
+	/* sets the font */
+	font-weight: 400;
+	/* stops select */
+	user-select: none;
+   /* top padding */
+	padding-top: 0.3ch;
+	/* aligns center */
+	text-align: center;
+	align-items: center;
+   align-content: center;
+	justify-content: center;
+	/* sets the border */
+	margin-top: 0.2ch;
+	margin-left: 0.2ch;
+	margin-right: 0.2ch;
+	margin-bottom: 0.2ch;
+	padding-left: 1.2rem;
+	padding-right: 1.2rem;
+	padding-bottom: 0.3ch;
+	border-radius: 0.15rem;
+	/* sets the height */
+	min-height: 18vh;
 	/* sets the background color & shadow */
 	background-color: var(--default-color);
    /* sets the border style and color */
