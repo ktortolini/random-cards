@@ -183,7 +183,7 @@ But I had a lot of fun making it.
 
 ## _BitKit_
 
-Introducing `bitkit.css`, a lightweight framework designed primarily for the final project of the comprehensive EDX Full Stack Web Development online program. To learn about the online program from EDX visit the link here: https://www.edx.org/learn/full-stack-development. Enchanted with nostalgic and old-school games, the goal of `bitkit.css` is to provide a seamless experience in creating games reminiscent of the classic Contra, R-Type series, and other retro side-scrolling arcade games. To capture the visual appeal of old-school arcade games `bitkit.css` has a built in television scanning effect that was built with guidance from a tutorial by [aleclownes](https://aleclownes.com/) about recreating the effect of a Cathode Ray Tube (CRT) display. Using the following resource (http://aleclownes.com/2017/02/01/crt-display.html) a very subtle and non-obtrusive effect was created to bring a captivating layer of authenticity to future pixel game projects. Still in its infancy, `bitkit.css` offers an intuitive way to accelerate the design process of retro side-scrolling arcade games by creating modular classes that can be used to address any challenge. These tools provide a solid foundation for game design. 
+Introducing `bitkit.css`, a lightweight framework designed primarily for the final project of the comprehensive EDX Full Stack Web Development online program. To learn about the online program from EDX visit the link here: https://www.edx.org/learn/full-stack-development. Enchanted with nostalgic and old-school games, the goal of `bitkit.css` is to provide a seamless experience in creating games reminiscent of the classic Contra, R-Type series, and other retro side-scrolling arcade games. To capture the visual appeal of old-school arcade games `bitkit.css` has a built in television scanning effect that was built with guidance from a tutorial by [aleclownes](https://aleclownes.com/) about recreating the effect of a Cathode Ray Tube (CRT) display. Using the following resource (http://aleclownes.com/2017/02/01/crt-display.html) a very subtle and non-obtrusive effect was created to bring a captivating layer of authenticity to future pixel game projects. 
 
 Currently, classes `.flex`, `.block`, `.inline-flex`, and `.inline-block` provide block-level design capabilities to enhance the layout and style of the webpage:
 
@@ -206,7 +206,7 @@ Currently, classes `.t-row`, `.p-row`, `.nb-row`, `.btn-row`, `.i-row`, and `.c-
 - `.i-row` class allows an HTML5 row element to highlight important information on the screen by adding visual prominence to the content with a solid border.
 - `.c-row` class allows an HTML5 row element to fit within a multiple-choice question or web application modal as a selectable choice element.
 
-When the above classes are applied effectively a nostalgic aesthetic may be achieved for arcade game projects in the future. Further improvement will be made throughout the coming months. Stay tuned for further documentation and improvements. ✏️
+Still in its infancy, `bitkit.css` offers an intuitive way to accelerate the design process of a retro side-scrolling arcade game. Further improvement will be made throughout the coming months. Stay tuned for further documentation and additional changes. ✏️
 ## _Credits_
 
 The ITCH, JS, and GITHUB PAGES readme file icons on the top were made by [Ileriayo](https://github.com/Ileriayo) with a link provided below: https://github.com/Ileriayo/markdown-badges#badges. 
