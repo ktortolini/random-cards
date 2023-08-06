@@ -188,7 +188,7 @@ body {
 }
 /* button attributes */
 button {
-	font-size: 1.1ch;
+	font-size: 1.0ch;
 	font-family: inherit;
 	cursor: var(--cursor);
 	color: var(--black-color);
@@ -203,7 +203,7 @@ button:hover {
 	/* sets margin */
 	margin: 0 auto;
 	/* sets font size */
-   font-size: 1.1ch;
+   font-size: 1.0ch;
 	/* sets the font */
 	font-weight: 400;
 	/* sets the width */
@@ -368,7 +368,7 @@ p {
 	/* todo: fix display for tablets */
 	border-width: 40px;
   	border-style: solid;
-	border-image: var(--full-frame) 25 round;
+	border-image: var(--full-frame) 40 stretch;
 	/* sets the background color & shadow */
 	background-color: var(--default-color);
 }
