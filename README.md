@@ -2,10 +2,10 @@
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Github Pages](https://img.shields.io/badge/github%20pages-121013?style=for-the-badge&logo=github&logoColor=white)
 
-![GitHub](https://img.shields.io/github/license/ktortolini/stu-side-project-01?style=flat-square)
-![GitHub language count](https://img.shields.io/github/languages/count/ktortolini/stu-side-project-01?style=flat-square)
-![GitHub top language](https://img.shields.io/github/languages/top/ktortolini/stu-side-project-01?color=green&style=flat-square)
-[![GitHub page](https://img.shields.io/badge/GitHub%20Page-ktortolini.github.io/stu--side--project--01-blue.svg?style=flat-square)](https://ktortolini.github.io/stu-side-project-01/)
+![GitHub](https://img.shields.io/github/license/ktortolini/random-cards?style=flat-square)
+![GitHub language count](https://img.shields.io/github/languages/count/ktortolini/random-cards?style=flat-square)
+![GitHub top language](https://img.shields.io/github/languages/top/ktortolini/random-cards?color=green&style=flat-square)
+[![GitHub page](https://img.shields.io/badge/GitHub%20Page-ktortolini.github.io/random--cards-blue.svg?style=flat-square)](https://ktortolini.github.io/random-cards/)
 
 # Random Cards
 
