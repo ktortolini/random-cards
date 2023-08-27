@@ -2,15 +2,15 @@
 @import url('https://raw.githubusercontent.com/ktortolini/stu-side-project-01/main/assets/css/bitkit.css');
 
 :root {
-   --green-color: hsla(90, 100%, 8%, 0.8);
+	--green-color: hsla(90, 100%, 8%, 0.8);
 }
 
 body {
-   margin: 0 auto !important;
-   background-color: var(--green-color);
+	margin: 0 auto !important;
+	background-color: var(--green-color);
 }
 
 /* call variable from bitkit */
 #score {
-   color: var(--success-text-color);
+	color: var(--success-text-color);
 }
