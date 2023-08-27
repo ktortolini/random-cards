@@ -1,35 +1,28 @@
 /* imports the type kit css for the custom font */
-@import url("https://use.typekit.net/taj5cvm.css");
+@import url('https://use.typekit.net/taj5cvm.css');
 /* styling for small mobile devices and medium mobile devices */
-@media screen 
-and (min-width: 319px)
-and (max-width: 424px) {
+@media screen and (min-width: 319px) and (max-width: 424px) {
 	body {
 		font-size: 3ch;
 		max-width: 84vw;
 	}
 }
 /* styling for large mobile devices and small tablets */
-@media screen
-and (min-width: 425px)
-and (max-width: 578px) {
+@media screen and (min-width: 425px) and (max-width: 578px) {
 	body {
 		font-size: 4ch;
 		max-width: 82vw;
 	}
 }
 /* styling for large tablet devices and small laptops */
-@media screen
-and (min-width: 579px)
-and (max-width: 1026px) {
+@media screen and (min-width: 579px) and (max-width: 1026px) {
 	body {
 		font-size: 5ch;
 		max-width: 79vw;
 	}
 }
 /* styling for desktop computers */
-@media screen
-and (min-width: 1027px) {
+@media screen and (min-width: 1027px) {
 	body {
 		font-size: 8ch;
 		max-width: 68vw;
@@ -37,31 +30,33 @@ and (min-width: 1027px) {
 }
 /* the blink animation */
 @keyframes blinkAnimation {
-   0% {
-      /* keep this empty */
-   } 50% {
-      color: transparent;
-   } 100% {
-      /* keep this empty */
-   }
+	0% {
+		/* keep this empty */
+	}
+	50% {
+		color: transparent;
+	}
+	100% {
+		/* keep this empty */
+	}
 }
 @keyframes scanAnimation {
 	0% {
-	  /* keep this empty */
+		/* keep this empty */
 	}
 	100% {
-	  background-position: 0rem -3.262rem;
+		background-position: 0rem -3.262rem;
 	}
- }
+}
 /* the warning animation */
 @keyframes warningAnimation {
 	0% {
 		/* leave this empty */
-	} 
+	}
 	100% {
 		color: var(--warning-text-color);
-      background-color: var(--warning-color);
-      border-color: var(--warning-border-color);
+		background-color: var(--warning-color);
+		border-color: var(--warning-border-color);
 	}
 }
 /* the success animation */
@@ -72,30 +67,30 @@ and (min-width: 1027px) {
 	100% {
 		color: var(--success-text-color);
 		background-color: var(--success-color);
-      border-color: var(--success-border-color);
+		border-color: var(--success-border-color);
 	}
 }
 :root {
 	/* warning background and text colors */
 	--warning-color: hsla(347, 100%, 52%, 0.4);
-   --warning-text-color: hsla(347, 100%, 29%, 0.8);
-   --warning-border-color: hsla(347, 100%, 41%, 1.0);
-   /* warning background and text colors */
+	--warning-text-color: hsla(347, 100%, 29%, 0.8);
+	--warning-border-color: hsla(347, 100%, 41%, 1);
+	/* warning background and text colors */
 	--success-color: hsla(87, 100%, 52%, 0.4);
-   --success-text-color: hsla(87, 100%, 29%, 0.8);
-   --success-border-color: hsla(87, 100%, 41%, 1.0);
+	--success-text-color: hsla(87, 100%, 29%, 0.8);
+	--success-border-color: hsla(87, 100%, 41%, 1);
 	/* white background and text colors */
 	--white-color: hsl(0, 17%, 89%, 0.4);
-   --white-text-color: hsl(0, 17%, 91%, 0.8);
-   --white-border-color: hsl(0, 17%, 93%, 1.0);
-   /* black background and text colors */
-   --black-color: hsl(190, 33%, 17%, 0.4);
-   --black-text-color: hsl(190, 33%, 19%, 0.8);
-   --black-border-color: hsl(190, 33%, 21%, 1.0);
-   /* default background and text colors */
+	--white-text-color: hsl(0, 17%, 91%, 0.8);
+	--white-border-color: hsl(0, 17%, 93%, 1);
+	/* black background and text colors */
+	--black-color: hsl(190, 33%, 17%, 0.4);
+	--black-text-color: hsl(190, 33%, 19%, 0.8);
+	--black-border-color: hsl(190, 33%, 21%, 1);
+	/* default background and text colors */
 	--default-color: hsla(215, 32%, 58%, 0.3);
-   --default-text-color: hsla(0, 0%, 15%, 0.8);
-   --default-border-color: hsl(215, 32%, 10%, 1.0);
+	--default-text-color: hsla(0, 0%, 15%, 0.8);
+	--default-border-color: hsl(215, 32%, 10%, 1);
 
 	/* graphics asset urls from the cloudinary platform */
 	/* info: default cursor for bitkit ui in cloudinary */
@@ -139,28 +134,203 @@ and (min-width: 1027px) {
 	--blue-full-heart-icon: url(https://res.cloudinary.com/bitkit/ui/hf6.svg);
 	--blue-half-heart-icon: url(https://res.cloudinary.com/bitkit/ui/tw0.svg);
 	--blue-empty-heart-icon: url(https://res.cloudinary.com/bitkit/ui/qo2.svg);
+	/* info: various keyboard keys & animation for bitkit ui in cloudinary */
+	--a-full-key: url(https://res.cloudinary.com/bitkit/kb/l77.svg);
+	--a-half-key: url(https://res.cloudinary.com/bitkit/kb/to2.svg);
+	--b-full-key: url(https://res.cloudinary.com/bitkit/kb/s9t.svg);
+	--b-half-key: url(https://res.cloudinary.com/bitkit/kb/4jn.svg);
+	--c-full-key: url(https://res.cloudinary.com/bitkit/kb/be5.svg);
+	--c-half-key: url(https://res.cloudinary.com/bitkit/kb/kg3.svg);
+	--d-full-key: url(https://res.cloudinary.com/bitkit/kb/kg8.svg);
+	--d-half-key: url(https://res.cloudinary.com/bitkit/kb/x0g.svg);
+	--e-full-key: url(https://res.cloudinary.com/bitkit/kb/z2o.svg);
+	--e-half-key: url(https://res.cloudinary.com/bitkit/kb/7m4.svg);
+	--f-full-key: url(https://res.cloudinary.com/bitkit/kb/ch3.svg);
+	--f-half-key: url(https://res.cloudinary.com/bitkit/kb/0pk.svg);
+	--g-full-key: url(https://res.cloudinary.com/bitkit/kb/kc8.svg);
+	--g-half-key: url(https://res.cloudinary.com/bitkit/kb/v37.svg);
+	--h-full-key: url(https://res.cloudinary.com/bitkit/kb/d4m.svg);
+	--h-half-key: url(https://res.cloudinary.com/bitkit/kb/z0q.svg);
+	--i-full-key: url(https://res.cloudinary.com/bitkit/kb/xe9.svg);
+	--i-half-key: url(https://res.cloudinary.com/bitkit/kb/kx0.svg);
+	--j-full-key: url(https://res.cloudinary.com/bitkit/kb/4ky.svg);
+	--j-half-key: url(https://res.cloudinary.com/bitkit/kb/q7e.svg);
+	--k-full-key: url(https://res.cloudinary.com/bitkit/kb/go9.svg);
+	--k-half-key: url(https://res.cloudinary.com/bitkit/kb/vu6.svg);
+	--l-full-key: url(https://res.cloudinary.com/bitkit/kb/bf7.svg);
+	--l-half-key: url(https://res.cloudinary.com/bitkit/kb/5kz.svg);
+	--m-full-key: url(https://res.cloudinary.com/bitkit/kb/w1m.svg);
+	--m-half-key: url(https://res.cloudinary.com/bitkit/kb/hx2.svg);
+	--n-full-key: url(https://res.cloudinary.com/bitkit/kb/ma2.svg);
+	--n-half-key: url(https://res.cloudinary.com/bitkit/kb/he1.svg);
+	--o-full-key: url(https://res.cloudinary.com/bitkit/kb/e1q.svg);
+	--o-half-key: url(https://res.cloudinary.com/bitkit/kb/i46.svg);
+	--p-full-key: url(https://res.cloudinary.com/bitkit/kb/y2q.svg);
+	--p-half-key: url(https://res.cloudinary.com/bitkit/kb/u5x.svg);
+	--q-full-key: url(https://res.cloudinary.com/bitkit/kb/fe4.svg);
+	--q-half-key: url(https://res.cloudinary.com/bitkit/kb/w1f.svg);
+	--r-full-key: url(https://res.cloudinary.com/bitkit/kb/c0l.svg);
+	--r-half-key: url(https://res.cloudinary.com/bitkit/kb/m3w.svg);
+	--s-full-key: url(https://res.cloudinary.com/bitkit/kb/v0y.svg);
+	--s-half-key: url(https://res.cloudinary.com/bitkit/kb/ff5.svg);
+	--t-full-key: url(https://res.cloudinary.com/bitkit/kb/k1d.svg);
+	--t-half-key: url(https://res.cloudinary.com/bitkit/kb/hj8.svg);
+	--u-full-key: url(https://res.cloudinary.com/bitkit/kb/0mx.svg);
+	--u-half-key: url(https://res.cloudinary.com/bitkit/kb/x2k.svg);
+	--v-full-key: url(https://res.cloudinary.com/bitkit/kb/mc6.svg);
+	--v-half-key: url(https://res.cloudinary.com/bitkit/kb/9eb.svg);
+	--w-full-key: url(https://res.cloudinary.com/bitkit/kb/ef4.svg);
+	--w-half-key: url(https://res.cloudinary.com/bitkit/kb/qr4.svg);
+	--x-full-key: url(https://res.cloudinary.com/bitkit/kb/ac4.svg);
+	--x-half-key: url(https://res.cloudinary.com/bitkit/kb/w1c.svg);
+	--y-full-key: url(https://res.cloudinary.com/bitkit/kb/si4.svg);
+	--y-half-key: url(https://res.cloudinary.com/bitkit/kb/9mw.svg);
+	--z-full-key: url(https://res.cloudinary.com/bitkit/kb/0oz.svg);
+	--z-half-key: url(https://res.cloudinary.com/bitkit/kb/1c9.svg);
+	--a-empty-key: url(https://res.cloudinary.com/bitkit/kb/pu7.svg);
+	--b-empty-key: url(https://res.cloudinary.com/bitkit/kb/p7f.svg);
+	--c-empty-key: url(https://res.cloudinary.com/bitkit/kb/be1.svg);
+	--d-empty-key: url(https://res.cloudinary.com/bitkit/kb/w1n.svg);
+	--e-empty-key: url(https://res.cloudinary.com/bitkit/kb/z9z.svg);
+	--f-empty-key: url(https://res.cloudinary.com/bitkit/kb/j7n.svg);
+	--g-empty-key: url(https://res.cloudinary.com/bitkit/kb/uw2.svg);
+	--h-empty-key: url(https://res.cloudinary.com/bitkit/kb/dp4.svg);
+	--i-empty-key: url(https://res.cloudinary.com/bitkit/kb/ca1.svg);
+	--j-empty-key: url(https://res.cloudinary.com/bitkit/kb/i7z.svg);
+	--k-empty-key: url(https://res.cloudinary.com/bitkit/kb/tx1.svg);
+	--l-empty-key: url(https://res.cloudinary.com/bitkit/kb/k9a.svg);
+	--m-empty-key: url(https://res.cloudinary.com/bitkit/kb/st9.svg);
+	--n-empty-key: url(https://res.cloudinary.com/bitkit/kb/9uq.svg);
+	--o-empty-key: url(https://res.cloudinary.com/bitkit/kb/g91.svg);
+	--p-empty-key: url(https://res.cloudinary.com/bitkit/kb/4yg.svg);
+	--q-empty-key: url(https://res.cloudinary.com/bitkit/kb/b13.svg);
+	--r-empty-key: url(https://res.cloudinary.com/bitkit/kb/qp1.svg);
+	--s-empty-key: url(https://res.cloudinary.com/bitkit/kb/e7p.svg);
+	--t-empty-key: url(https://res.cloudinary.com/bitkit/kb/rw8.svg);
+	--u-empty-key: url(https://res.cloudinary.com/bitkit/kb/sg5.svg);
+	--v-empty-key: url(https://res.cloudinary.com/bitkit/kb/yo1.svg);
+	--w-empty-key: url(https://res.cloudinary.com/bitkit/kb/k3j.svg);
+	--x-empty-key: url(https://res.cloudinary.com/bitkit/kb/cr1.svg);
+	--y-empty-key: url(https://res.cloudinary.com/bitkit/kb/y88.svg);
+	--z-empty-key: url(https://res.cloudinary.com/bitkit/kb/br6.svg);
+	--dot-full-key: url(https://res.cloudinary.com/bitkit/kb/x2u.svg);
+	--dot-half-key: url(https://res.cloudinary.com/bitkit/kb/16b.svg);
+	--one-full-key: url(https://res.cloudinary.com/bitkit/kb/t2h.svg);
+	--one-half-key: url(https://res.cloudinary.com/bitkit/kb/f4n.svg);
+	--two-full-key: url(https://res.cloudinary.com/bitkit/kb/m0e.svg);
+	--two-half-key: url(https://res.cloudinary.com/bitkit/kb/cg3.svg);
+	--six-full-key: url(https://res.cloudinary.com/bitkit/kb/yd6.svg);
+	--six-half-key: url(https://res.cloudinary.com/bitkit/kb/kj1.svg);
+	--alt-full-key: url(https://res.cloudinary.com/bitkit/kb/ib6.svg);
+	--alt-half-key: url(https://res.cloudinary.com/bitkit/kb/2au.svg);
+	--tab-full-key: url(https://res.cloudinary.com/bitkit/kb/gc1.svg);
+	--tab-half-key: url(https://res.cloudinary.com/bitkit/kb/nu3.svg);
+	--dot-empty-key: url(https://res.cloudinary.com/bitkit/kb/f1c.svg);
+	--plus-full-key: url(https://res.cloudinary.com/bitkit/kb/p33.svg);
+	--plus-half-key: url(https://res.cloudinary.com/bitkit/kb/qd4.svg);
+	--zero-full-key: url(https://res.cloudinary.com/bitkit/kb/7sc.svg);
+	--zero-half-key: url(https://res.cloudinary.com/bitkit/kb/ie8.svg);
+	--one-empty-key: url(https://res.cloudinary.com/bitkit/kb/g71.svg);
+	--two-empty-key: url(https://res.cloudinary.com/bitkit/kb/pu4.svg);
+	--four-full-key: url(https://res.cloudinary.com/bitkit/kb/ad9.svg);
+	--four-half-key: url(https://res.cloudinary.com/bitkit/kb/8by.svg);
+	--five-full-key: url(https://res.cloudinary.com/bitkit/kb/k0w.svg);
+	--five-half-key: url(https://res.cloudinary.com/bitkit/kb/7nt.svg);
+	--six-empty-key: url(https://res.cloudinary.com/bitkit/kb/sq2.svg);
+	--nine-full-key: url(https://res.cloudinary.com/bitkit/kb/d5r.svg);
+	--nine-half-key: url(https://res.cloudinary.com/bitkit/kb/1nd.svg);
+	--alt-empty-key: url(https://res.cloudinary.com/bitkit/kb/kx8.svg);
+	--tab-empty-key: url(https://res.cloudinary.com/bitkit/kb/li8.svg);
+	--quote-full-key: url(https://res.cloudinary.com/bitkit/kb/4z0.svg);
+	--quote-half-key: url(https://res.cloudinary.com/bitkit/kb/ad1.svg);
+	--minus-full-key: url(https://res.cloudinary.com/bitkit/kb/4om.svg);
+	--minus-half-key: url(https://res.cloudinary.com/bitkit/kb/nc8.svg);
+	--comma-full-key: url(https://res.cloudinary.com/bitkit/kb/jq3.svg);
+	--comma-half-key: url(https://res.cloudinary.com/bitkit/kb/i4c.svg);
+	--tilde-full-key: url(https://res.cloudinary.com/bitkit/kb/lm3.svg);
+	--tilde-half-key: url(https://res.cloudinary.com/bitkit/kb/f4r.svg);
+	--plus-empty-key: url(https://res.cloudinary.com/bitkit/kb/6fb.svg);
+	--zero-empty-key: url(https://res.cloudinary.com/bitkit/kb/zx9.svg);
+	--three-full-key: url(https://res.cloudinary.com/bitkit/kb/6yf.svg);
+	--three-half-key: url(https://res.cloudinary.com/bitkit/kb/v5z.svg);
+	--four-empty-key: url(https://res.cloudinary.com/bitkit/kb/rg4.svg);
+	--five-empty-key: url(https://res.cloudinary.com/bitkit/kb/i4x.svg);
+	--seven-full-key: url(https://res.cloudinary.com/bitkit/kb/7j3.svg);
+	--seven-half-key: url(https://res.cloudinary.com/bitkit/kb/v2l.svg);
+	--eight-full-key: url(https://res.cloudinary.com/bitkit/kb/d5n.svg);
+	--eight-half-key: url(https://res.cloudinary.com/bitkit/kb/i79.svg);
+	--nine-empty-key: url(https://res.cloudinary.com/bitkit/kb/t1u.svg);
+	--slash-full-key: url(https://res.cloudinary.com/bitkit/kb/w5a.svg);
+	--slash-half-key: url(https://res.cloudinary.com/bitkit/kb/1n3.svg);
+	--enter-full-key: url(https://res.cloudinary.com/bitkit/kb/em0.svg);
+	--enter-half-key: url(https://res.cloudinary.com/bitkit/kb/s6b.svg);
+	--space-full-key: url(https://res.cloudinary.com/bitkit/kb/qe3.svg);
+	--space-half-key: url(https://res.cloudinary.com/bitkit/kb/2gy.svg);
+	--quote-empty-key: url(https://res.cloudinary.com/bitkit/kb/r8q.svg);
+	--minus-empty-key: url(https://res.cloudinary.com/bitkit/kb/b2v.svg);
+	--comma-empty-key: url(https://res.cloudinary.com/bitkit/kb/xd5.svg);
+	--tilde-empty-key: url(https://res.cloudinary.com/bitkit/kb/5xc.svg);
+	--three-empty-key: url(https://res.cloudinary.com/bitkit/kb/5w8.svg);
+	--seven-empty-key: url(https://res.cloudinary.com/bitkit/kb/bn5.svg);
+	--eight-empty-key: url(https://res.cloudinary.com/bitkit/kb/3uz.svg);
+	--slash-empty-key: url(https://res.cloudinary.com/bitkit/kb/t5g.svg);
+	--enter-empty-key: url(https://res.cloudinary.com/bitkit/kb/ee9.svg);
+	--space-empty-key: url(https://res.cloudinary.com/bitkit/kb/u8g.svg);
+	--command-full-key: url(https://res.cloudinary.com/bitkit/kb/ji0.svg);
+	--command-half-key: url(https://res.cloudinary.com/bitkit/kb/w12.svg);
+	--control-full-key: url(https://res.cloudinary.com/bitkit/kb/uz8.svg);
+	--control-half-key: url(https://res.cloudinary.com/bitkit/kb/q1s.svg);
+	--command-empty-key: url(https://res.cloudinary.com/bitkit/kb/d7g.svg);
+	--control-empty-key: url(https://res.cloudinary.com/bitkit/kb/r3v.svg);
+	--function-full-key: url(https://res.cloudinary.com/bitkit/kb/oe4.svg);
+	--function-half-key: url(https://res.cloudinary.com/bitkit/kb/mi5.svg);
+	--semicolon-full-key: url(https://res.cloudinary.com/bitkit/kb/6cv.svg);
+	--semicolon-half-key: url(https://res.cloudinary.com/bitkit/kb/6sd.svg);
+	--backslash-full-key: url(https://res.cloudinary.com/bitkit/kb/e0b.svg);
+	--backslash-half-key: url(https://res.cloudinary.com/bitkit/kb/u6n.svg);
+	--backspace-full-key: url(https://res.cloudinary.com/bitkit/kb/zh2.svg);
+	--backspace-half-key: url(https://res.cloudinary.com/bitkit/kb/fl2.svg);
+	--caps-lock-full-key: url(https://res.cloudinary.com/bitkit/kb/u68.svg);
+	--caps-lock-half-key: url(https://res.cloudinary.com/bitkit/kb/7ae.svg);
+	--function-empty-key: url(https://res.cloudinary.com/bitkit/kb/a1w.svg);
+	--semicolon-empty-key: url(https://res.cloudinary.com/bitkit/kb/ga8.svg);
+	--backslash-empty-key: url(https://res.cloudinary.com/bitkit/kb/a90.svg);
+	--backspace-empty-key: url(https://res.cloudinary.com/bitkit/kb/4ym.svg);
+	--caps-lock-empty-key: url(https://res.cloudinary.com/bitkit/kb/y4n.svg);
+	--shift-left-full-key: url(https://res.cloudinary.com/bitkit/kb/h2r.svg);
+	--shift-left-half-key: url(https://res.cloudinary.com/bitkit/kb/v6w.svg);
+	--shift-left-empty-key: url(https://res.cloudinary.com/bitkit/kb/nz1.svg);
+	--shift-right-full-key: url(https://res.cloudinary.com/bitkit/kb/gg7.svg);
+	--shift-right-half-key: url(https://res.cloudinary.com/bitkit/kb/ju1.svg);
+	--open-bracket-full-key: url(https://res.cloudinary.com/bitkit/kb/pl7.svg);
+	--open-bracket-half-key: url(https://res.cloudinary.com/bitkit/kb/w8w.svg);
+	--shift-right-empty-key: url(https://res.cloudinary.com/bitkit/kb/2fs.svg);
+	--open-bracket-empty-key: url(https://res.cloudinary.com/bitkit/kb/6t4.svg);
+	--close-bracket-full-key: url(https://res.cloudinary.com/bitkit/kb/kc3.svg);
+	--close-bracket-half-key: url(https://res.cloudinary.com/bitkit/kb/pm9.svg);
+	--close-bracket-empty-key: url(https://res.cloudinary.com/bitkit/kb/m11.svg);
 }
 ::-webkit-scrollbar {
 	height: 0;
 }
 /* base attributes */
 html {
-   box-sizing: border-box;
+	box-sizing: border-box;
 	scroll-behavior: smooth;
-   cursor: var(--cursor), auto;
-   text-shadow: 0.01rem 0.01rem var(--black-color);
+	cursor: var(--cursor), auto;
+	text-shadow: 0.01rem 0.01rem var(--black-color);
 }
 /* old-school effect */
 html::before {
-   inset: 0;
+	inset: 0;
 	content: '';
 	position: absolute;
-   pointer-events: none;
+	pointer-events: none;
 	mix-blend-mode: screen;
 	background: linear-gradient(
 		to bottom,
-		hsla(0, 0%, 0%, 0.0) 50%,
-      hsla(0, 0%, 100%, 0.03) 50%
+		hsla(0, 0%, 0%, 0) 50%,
+		hsla(0, 0%, 100%, 0.03) 50%
 	);
 	background-size: 85% 0.805px, 0.805px 85%;
 	animation: scanAnimation 0.55s linear infinite;
@@ -171,24 +341,24 @@ body {
 	margin: 0 auto;
 	/* sets the font */
 	font-weight: 400;
-   /* sets overflow */
-   overflow: hidden;
+	/* sets overflow */
+	overflow: hidden;
 	/* ! testing: working here ! */
 	/* todo: enable user select */
 	user-select: none;
 	overflow-wrap: break-word;
-   /* sets the font color */
+	/* sets the font color */
 	color: var(--default-text-color);
-   /* sets a transition to body */
-   transition: all 0.285s linear;
-   /* sets the font family to lores */
-   font-family: 'lores-12', sans-serif;
-   /* sets the body background color */
+	/* sets a transition to body */
+	transition: all 0.285s linear;
+	/* sets the font family to lores */
+	font-family: 'lores-12', sans-serif;
+	/* sets the body background color */
 	background-color: var(--black-color);
 }
 /* button attributes */
 button {
-	font-size: 1.0ch;
+	font-size: 1ch;
 	font-family: inherit;
 	cursor: var(--cursor);
 	color: var(--black-color);
@@ -203,17 +373,17 @@ button:hover {
 	/* sets margin */
 	margin: 0 auto;
 	/* sets font size */
-   font-size: 1.0ch;
+	font-size: 1ch;
 	/* sets the font */
 	font-weight: 400;
 	/* sets the width */
 	min-width: 12.6rem;
-   /* sets the height */
-   min-height: 2rem;
+	/* sets the height */
+	min-height: 2rem;
 	/* sets the font */
 	font-family: inherit;
-   /* sets the border style and color */
-   border: 0.35rem inset var(--white-border-color);
+	/* sets the border style and color */
+	border: 0.35rem inset var(--white-border-color);
 }
 .in-row input:hover {
 	cursor: var(--txt-caret), text;
@@ -224,9 +394,9 @@ button:hover {
 }
 /* ul attributes */
 ul {
-   list-style: none;
-   text-align: center;
-   padding-inline-end: 2.1rem;
+	list-style: none;
+	text-align: center;
+	padding-inline-end: 2.1rem;
 	padding-inline-start: 2.1rem;
 }
 /* a attributes */
@@ -237,8 +407,8 @@ a {
 }
 /* p attributes */
 p {
-   text-align: center;
-   padding-inline-end: 2.1rem;
+	text-align: center;
+	padding-inline-end: 2.1rem;
 	padding-inline-start: 2.1rem;
 }
 /* hidden and other classes */
@@ -267,9 +437,9 @@ p {
 .bdy-container {
 	/* sets margin */
 	margin: 0 auto;
-   /* sets height */
-   min-height: 100vh;
-   max-height: 100vh;
+	/* sets height */
+	min-height: 100vh;
+	max-height: 100vh;
 }
 /* graphic class */
 .grphc-container {
@@ -277,10 +447,10 @@ p {
 	margin: 0 auto;
 	/* stops select */
 	user-select: none;
-   /* aligns center */
+	/* aligns center */
 	text-align: center;
 	align-items: center;
-   align-content: center;
+	align-content: center;
 	justify-content: center;
 }
 /* carousel class */
@@ -295,8 +465,8 @@ p {
 .t-row {
 	/* sets margin */
 	margin: 0 auto;
-   /* sets the font */
-   font-weight: 400;
+	/* sets the font */
+	font-weight: 400;
 	/* stops select */
 	user-select: none;
 }
@@ -304,13 +474,13 @@ p {
 .p-row {
 	/* sets margin */
 	margin: 0 auto;
-   /* sets the font */
-   font-weight: 400;
+	/* sets the font */
+	font-weight: 400;
 	/* stops select */
 	user-select: none;
-   /* sets the animation for prompts */
+	/* sets the animation for prompts */
 	animation-fill-mode: forwards;
-   animation: blinkAnimation 0.62s infinite;
+	animation: blinkAnimation 0.62s infinite;
 }
 /* navbar class */
 .nb-row {
@@ -331,7 +501,7 @@ p {
 	/* aligns center */
 	text-align: center;
 	align-items: center;
-   align-content: center;
+	align-content: center;
 	justify-content: center;
 	/* sets the border */
 	padding-left: 0.5rem;
@@ -339,16 +509,16 @@ p {
 	border-radius: 0.15rem;
 	/* sets the width */
 	max-width: 9.8ch;
-   /* sets the height */
-   min-height: 2.7ch;
+	/* sets the height */
+	min-height: 2.7ch;
 	/* sets the background color & shadow */
 	background-color: var(--default-color);
-   /* sets the border style and color */
-   border: 0.5rem outset var(--default-border-color);
+	/* sets the border style and color */
+	border: 0.5rem outset var(--default-border-color);
 }
 .btn-row:active {
-   color: var(--black-text-color);
-   /* sets the background color & shadow */
+	color: var(--black-text-color);
+	/* sets the background color & shadow */
 	background-color: var(--black-color);
 }
 /* form class */
@@ -362,12 +532,12 @@ p {
 	/* aligns center */
 	text-align: center;
 	align-items: center;
-   align-content: center;
+	align-content: center;
 	justify-content: center;
 	/* ! testing: working here ! */
 	/* todo: fix display for tablets */
 	border-width: 40px;
-  	border-style: solid;
+	border-style: solid;
 	border-image: var(--full-frame) 40 stretch;
 	/* sets the background color & shadow */
 	background-color: var(--default-color);
@@ -383,7 +553,7 @@ p {
 	/* aligns center */
 	text-align: center;
 	align-items: center;
-   align-content: center;
+	align-content: center;
 	justify-content: center;
 	/* sets the border */
 	padding-left: 0.5rem;
@@ -393,8 +563,8 @@ p {
 	min-height: 19vh;
 	/* sets the background color & shadow */
 	background-color: var(--default-color);
-   /* sets the border style and color */
-   border: 0.5rem outset var(--default-border-color);
+	/* sets the border style and color */
+	border: 0.5rem outset var(--default-border-color);
 }
 /* information column */
 .i-col {
@@ -404,12 +574,12 @@ p {
 	font-weight: 400;
 	/* stops select */
 	user-select: none;
-   /* top padding */
+	/* top padding */
 	padding-top: 0.3ch;
 	/* aligns center */
 	text-align: center;
 	align-items: center;
-   align-content: center;
+	align-content: center;
 	justify-content: center;
 	/* sets the border */
 	margin-top: 0.2ch;
@@ -424,8 +594,8 @@ p {
 	min-height: 18vh;
 	/* sets the background color & shadow */
 	background-color: var(--default-color);
-   /* sets the border style and color */
-   border: 0.5rem outset var(--default-border-color);
+	/* sets the border style and color */
+	border: 0.5rem outset var(--default-border-color);
 }
 /* choice class */
 .c-row {
@@ -438,7 +608,7 @@ p {
 	/* aligns center */
 	text-align: center;
 	align-items: center;
-   align-content: center;
+	align-content: center;
 	justify-content: center;
 	/* sets height */
 	min-height: 10.5vh;
@@ -450,6 +620,6 @@ p {
 	color: var(--default-text-color);
 	/* sets the background color & shadow */
 	background-color: var(--default-color);
-   /* sets the border style and color */
-   border: 0.5rem outset var(--default-border-color);
+	/* sets the border style and color */
+	border: 0.5rem outset var(--default-border-color);
 }
