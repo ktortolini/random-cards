@@ -98,6 +98,8 @@
 	--txt-caret: url(https://res.cloudinary.com/bitkit/ui/dn2.svg);
 	/* info: f-row full frame for bitkit ui in cloudinary */
 	--full-frame: url(https://res.cloudinary.com/bitkit/ui/nk6.svg);
+	/* info: i-row full frame for bitkit ui in cloudinary */
+	--half-frame: url(https://res.cloudinary.com/bitkit/ui/h2d.svg);
 	/* info: weather icons for bitkit features from cloudinary */
 	--weather-ice: url(https://res.cloudinary.com/bitkit/w/j8n.svg);
 	--weather-sun: url(https://res.cloudinary.com/bitkit/w/u4m.svg);
@@ -555,16 +557,13 @@ p {
 	align-items: center;
 	align-content: center;
 	justify-content: center;
-	/* sets the border */
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
-	border-radius: 0.15rem;
-	/* sets the height */
-	min-height: 19vh;
+	/* ! testing: working here ! */
+	/* todo: fix display for tablets */
+	border-width: 40px;
+	border-style: solid;
+	border-image: var(--half-frame) 40 stretch;
 	/* sets the background color & shadow */
 	background-color: var(--default-color);
-	/* sets the border style and color */
-	border: 0.5rem outset var(--default-border-color);
 }
 /* information column */
 .i-col {
