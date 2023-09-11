@@ -1,5 +1,5 @@
 /* import bitkit for future projects, see below for demonstration purposes */
-@import url('https://raw.githubusercontent.com/ktortolini/stu-side-project-01/main/assets/css/bitkit.css');
+@import url('https://raw.githubusercontent.com/ktortolini/random-cards/main/assets/css/bitkit.css');
 /* styling for large tablet devices and small laptops */
 @media screen and (min-width: 579px) and (max-width: 1026px) {
 	.grphc-container img {
