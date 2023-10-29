@@ -106,6 +106,12 @@
 	--primary-four: url(https://res.cloudinary.com/bitkit/b/0sc.svg);
 	--primary-five: url(https://res.cloudinary.com/bitkit/b/e8g.svg);
 	--primary-three: url(https://res.cloudinary.com/bitkit/b/ra9.svg);
+	/* info: complete card frames for bitkit ui in cloudinary */
+	--gold-card: url(https://res.cloudinary.com/bitkit/f/z11.svg);
+	--forest-card: url(https://res.cloudinary.com/bitkit/f/em6.svg);
+	--dungeon-card: url(https://res.cloudinary.com/bitkit/f/s5y.svg);
+	--forest-card-alt: url(https://res.cloudinary.com/bitkit/f/fw9.svg);
+	--dungeon-card-alt: url(https://res.cloudinary.com/bitkit/f/gr8.svg);
 	/* info: weather icons for bitkit features from cloudinary */
 	--weather-ice: url(https://res.cloudinary.com/bitkit/w/j8n.svg);
 	--weather-sun: url(https://res.cloudinary.com/bitkit/w/u4m.svg);
