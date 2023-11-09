@@ -100,6 +100,13 @@
 	--full-frame: url(https://res.cloudinary.com/bitkit/ui/nk6.svg);
 	/* info: i-row full frame for bitkit ui in cloudinary */
 	--half-frame: url(https://res.cloudinary.com/bitkit/ui/h2d.svg);
+	/* info: d6 pixel representations for a dice game */
+	--one-face-die: url(https://res.cloudinary.com/bitkit/d/p5s.svg);
+	--two-face-die: url(https://res.cloudinary.com/bitkit/d/q58.svg);
+	--six-face-die: url(https://res.cloudinary.com/bitkit/d/wz0.svg);
+	--four-face-die: url(https://res.cloudinary.com/bitkit/d/zj2.svg);
+	--five-face-die: url(https://res.cloudinary.com/bitkit/d/al6.svg);
+	--three-face-die: url(https://res.cloudinary.com/bitkit/d/b21.svg);
 	/* info: weather icons for bitkit features from cloudinary */
 	--weather-ice: url(https://res.cloudinary.com/bitkit/w/j8n.svg);
 	--weather-sun: url(https://res.cloudinary.com/bitkit/w/u4m.svg);
